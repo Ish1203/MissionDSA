@@ -7,3 +7,5 @@ def substrings(number: str) -> int:
         digit_presence = digit_idx + 1
         sub_sum = (sub_sum * 10 + digit * digit_presence) % modulo
         result = (result + sub_sum) % modulo
+
+    return result
